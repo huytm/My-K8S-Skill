@@ -11,7 +11,7 @@ fi
 # Tại đây bạn có thể gọi các lệnh thực tế trong container của agent
 # Ví dụ: chạy ovnkube-trace để kiểm tra luồng mạng của Pod trong cluster
 # ovnkube-trace -namespace default -pod $TARGET_POD ...
-
+echo "Executed at $(date)" >> /tmp/skill_test.log
 # Trong bài lab này, ta giả lập kết quả trả về
 TRACE_RESULT="Trace execution simulated for $TARGET_POD"
 
